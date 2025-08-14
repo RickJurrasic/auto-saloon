@@ -1,11 +1,11 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import HelloTailwind from './components/HelloTailwind.vue';
+import NavBar from './components/NavBar.vue';
 </script>
 
 <template>
-  <HelloTailwind/>
+  <NavBar/>
 </template>
+
 
 <style scoped>
 .logo {
