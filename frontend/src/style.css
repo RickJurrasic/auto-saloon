@@ -7,13 +7,31 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Playfair';
+  src: url('./fonts/Playfair_regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
 .font-cinzel-decorative {
   font-family: 'Cinzel Decorative';
   font-weight: 400;
 }
 
+.font-playfair {
+  font-family: 'Playfair';
+  font-weight: 400;
+}
+
+
 .golden {
   color: #d4af37;
+}
+
+.overlay {
+  background-color: black;
+  opacity: 0.8;
 }
 
 :root {
@@ -63,7 +81,7 @@ button {
 }
 
 button:hover {
-  border-color: #646cff;
+  border-color: #d4af37;
 }
 
 button:focus,
