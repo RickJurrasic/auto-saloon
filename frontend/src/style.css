@@ -93,6 +93,10 @@ button:focus-visible {
   padding: 2em;
 }
 
+a.underline {
+  text-decoration: underline !important;
+}
+
 #app {
   margin: 0 auto;
   text-align: center;
