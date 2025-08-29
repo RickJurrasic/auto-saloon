@@ -9,8 +9,8 @@
 </head>
 
 <body>
-    <div id="app">
-    </div>
+    <div id="app" data-cars='@json($cars)'>
 
+    </div>
 </body>
 </html>

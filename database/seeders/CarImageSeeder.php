@@ -17,7 +17,7 @@ class CarImageSeeder extends Seeder
             for ($i = 1; $i <= 3; $i++) {
                 CarImage::create([
                     'car_id' => $car->id,
-                    'image_path' => "https://picsum.photos/seed/car{$car->id}_img{$i}/800/600",
+                    'image_path' => "https://picsum.photos/1024/768",
                 ]);
             }
         }
