@@ -1,4 +1,5 @@
 <script setup>
+import About from './components/About.vue';
 import Home from './components/Home.vue';
 import Showroom from './components/Showroom.vue';
 // import other components as needed
@@ -6,7 +7,8 @@ import Showroom from './components/Showroom.vue';
 const routes = {
   '/': Home,
   '/showroom': Showroom,
-  // add more routes here
+  '/about': About
+  //add more here
 };
 
 const currentPage = routes[window.location.pathname] || Home;

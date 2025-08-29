@@ -9,3 +9,7 @@ Route::get('/', function () {
 });
 
 Route::get('/showroom', [CarController::class, 'index']);
+
+Route::get('/about', function () {
+    return view('about');
+});
