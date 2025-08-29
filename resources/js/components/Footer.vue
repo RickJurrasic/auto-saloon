@@ -8,7 +8,7 @@
       <img :src="instagramIcon" alt="Instagram" class="h-6 w-6" />
     </div>
     <div class="flex-1 flex justify-center items-center golden font-cinzel-decorative">
-        <p class="text-xs">Erik Sternad
+        <p class="text-md md:text-xl lg:text-2xl">Erik Sternad
             <br>
             © 2025</p>
     </div>
