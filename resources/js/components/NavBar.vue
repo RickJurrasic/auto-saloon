@@ -2,7 +2,7 @@
   <nav class="relative flex items-center justify-between py-2 px-4 bg-[#292929]">
     <!-- Left: Logo (tablet/desktop: logo + brand name stacked vertically) -->
     <div class="flex-1 flex items-center md:justify-start">
-      <img :src="logo" alt="Logo" class="h-12 w-12 mx-auto md:h-10 md:w-10 md:mx-0" />
+  <img src="/assets/logo.svg" alt="Logo" class="h-12 w-12 mx-auto md:h-10 md:w-10 md:mx-0" />
       <!-- Brand name only on tablet/desktop -->
       <div class="hidden md:flex flex-col ml-2">
         <span class="font-cinzel-decorative golden text-xl leading-tight">Luxury</span>
@@ -60,7 +60,6 @@
 
 <script setup>
 import { ref } from 'vue';
-import logo from '../../images/logo.svg';
 
 const showDropdown = ref(false);
 

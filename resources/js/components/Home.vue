@@ -2,29 +2,24 @@
 import NavBar from './NavBar.vue';
 import Footer from './Footer.vue';
 import WhyChooseCard from './WhyChooseCard.vue';
-import contractIcon from '../../images/contract.svg';
-import supportIcon from '../../images/support.svg';
-import diamondIcon from '../../images/diamond.svg';
-import porscheIcon from '../../images/porsche.svg';
-
 const cards = [
   {
-    icon: contractIcon,
+    icon: '/assets/contract.svg',
     heading: 'Fast Approval',
     text: 'Get your dream car approved in minutes with our streamlined process.'
   },
   {
-    icon: supportIcon,
+    icon: '/assets/support.svg',
     heading: '24/7 Support',
     text: 'Got any questions? Feel free to reach out!'
   },
   {
-    icon: diamondIcon,
+    icon: '/assets/diamond.svg',
     heading: 'Premium Quality',
     text: 'We offer only the best cars for our customers.'
   },
   {
-    icon: porscheIcon,
+    icon: '/assets/porsche.svg',
     heading: 'Book a ride',
     text: 'Want to test out driving a luxury car? Book a ride now!'
   }
@@ -37,7 +32,7 @@ const cards = [
     <main class="flex-1">
     <div class="relative w-full h-[40vh] md:h-[95vh] lg:h-[95vh]">
       <video
-    src="../../videos/landing_video.mp4"
+    src="assets/landing_video.mp4"
     autoplay
     loop
     muted

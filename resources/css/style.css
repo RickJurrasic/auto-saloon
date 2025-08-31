@@ -29,6 +29,10 @@
   color: #d4af37;
 }
 
+.dark-gold {
+  color: #ad9a52;
+}
+
 .overlay {
   background-color: black;
   opacity: 0.8;
@@ -117,6 +121,14 @@ button:focus-visible {
 
 .card {
   padding: 2em;
+}
+
+.diamond-separator {
+  display: inline-block;
+  background-color: #ad9a52;
+  margin: 32px auto;
+  transform: rotate(45deg);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 
 a.underline {

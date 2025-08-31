@@ -3,9 +3,9 @@
     <div class="flex-1 flex justify-center items-center">
     </div>
     <div class="flex-1 flex justify-around items-center font-cinzel-decorative">
-      <img :src="facebookIcon" alt="Facebook" class="h-6 w-6" />
-      <img :src="tiktokIcon" alt="TikTok" class="h-6 w-6" />
-      <img :src="instagramIcon" alt="Instagram" class="h-6 w-6" />
+  <img src="/assets/facebook.svg" alt="Facebook" class="h-6 w-6" />
+  <img src="/assets/tiktok.svg" alt="TikTok" class="h-6 w-6" />
+  <img src="/assets/instagram.svg" alt="Instagram" class="h-6 w-6" />
     </div>
     <div class="flex-1 flex justify-center items-center golden font-cinzel-decorative">
         <p class="text-md md:text-xl lg:text-2xl">Erik Sternad
@@ -14,15 +14,3 @@
     </div>
   </footer>
 </template>
-
-<script setup>
-import facebookIcon from '../../images/facebook.svg';
-import tiktokIcon from '../../images/tiktok.svg';
-import instagramIcon from '../../images/instagram.svg';
-</script>
-
-<style scoped>
-    footer {
-        background-color: #292929;
-    }
-</style>

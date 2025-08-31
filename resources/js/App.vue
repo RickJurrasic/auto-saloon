@@ -2,7 +2,6 @@
 import About from './components/About.vue';
 import Home from './components/Home.vue';
 import Showroom from './components/Showroom.vue';
-// import other components as needed
 
 const routes = {
   '/': Home,
