@@ -18,10 +18,9 @@ const carouselConfig = { itemsToShow: 1, wrapAround: true };
         <CarCard
           v-for="car in cars"
           :key="car.id"
-          :images="car.images.map(img => img.image_path)"
+          :image="car.images.length ? car.images[0].image_path : ''"
           :name="car.model"
           :detailsUrl="`/cars/${car.id}`"
-          :carouselConfig="carouselConfig"
         />
       </div>
     </main>

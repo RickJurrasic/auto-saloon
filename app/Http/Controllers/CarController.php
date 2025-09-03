@@ -12,4 +12,10 @@ class CarController extends Controller
         $cars = Car::with('images')->get();
         return view('showroom', ['cars' => $cars]);
     }
+
+    public function show($id)
+    {
+        $car = Car::with('images')->findOrFail($id);
+        return view('cardetail', ['car' => $car]);
+    }
 }
