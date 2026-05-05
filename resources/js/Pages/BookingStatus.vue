@@ -11,7 +11,9 @@ const props = defineProps({
 </script>
 
 <template>
-    <Head :title="status === 'success' ? 'Booking Successful' : 'Booking Failed'" />
+    <Head>
+    <title>{{ status === 'success' ? 'Booking Successful | Autosaloon' : 'Booking Failed | Autosaloon' }}</title>
+</Head>
 
     <div class="container mx-auto p-6 text-white flex items-center justify-center" style="min-height: 60vh;">
         <div class="bg-[#292929] golden-border shadow-lg rounded-lg p-8 md:p-12 text-center max-w-2xl">

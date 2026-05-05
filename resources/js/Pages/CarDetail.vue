@@ -19,7 +19,7 @@ const carouselConfig = {
       <h1 class="golden font-playfair text-2xl md:text-4xl lg:text-6xl mb-6 text-center">{{ props.car.brand }} {{ props.car.model }}</h1>
       <Carousel :items-to-show="carouselConfig.itemsToShow" :wrap-around="carouselConfig.wrapAround" class="mx-auto max-w-5xl w-full">
   <Slide v-for="img in props.car.images" :key="img.image_path">
-    <img :src="img.image_path.startsWith('http') ? img.image_path : `/storage/${img.image_path}`" alt="Car photo" />
+    <img :src="img.image_path.startsWith('http') ? img.image_path : `/storage/${img.image_path}`" alt="Car" />
   </Slide>
   <template #addons>
     <Navigation />

@@ -125,7 +125,7 @@ const deleteImage = (imageId) => {
                         <h3 class="text-lg font-medium text-gray-300 mb-2">Current Images</h3>
                         <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
                             <div v-for="image in car.images" :key="image.id" class="relative">
-                                <img :src="`/storage/${image.image_path}`" class="rounded-lg w-full h-auto">
+                                <img :src="`/storage/${image.image_path}`" class="rounded-lg w-full h-auto" alt="Car preview">
                                 <button @click.prevent="deleteImage(image.id)" class="absolute top-1 right-1 bg-red-500 text-white rounded-full p-1 text-xs">&times;</button>
                             </div>
                         </div>

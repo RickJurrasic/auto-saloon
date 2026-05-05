@@ -41,7 +41,9 @@ const cancelBooking = (bookingId) => {
 </script>
 
 <template>
-    <Head title="My Bookings" />
+    <Head>
+    <title>{{ isAdmin ? 'All Bookings | Autosaloon' : 'My Bookings | Autosaloon' }}</title>
+</Head>
 
     <div class="container mx-auto p-6 text-white">
         <!-- Flash Messages -->
