@@ -1,0 +1,66 @@
+<script setup>
+import { Link } from '@inertiajs/vue3';
+import WhyChooseCard from '../components/WhyChooseCard.vue';
+const cards = [
+  {
+    icon: '/assets/contract.svg',
+    heading: 'Fast Approval',
+    text: 'Get your dream car approved in minutes with our streamlined process.'
+  },
+  {
+    icon: '/assets/support.svg',
+    heading: '24/7 Support',
+    text: 'Got any questions? Feel free to reach out!'
+  },
+  {
+    icon: '/assets/diamond.svg',
+    heading: 'Premium Quality',
+    text: 'We offer only the best cars for our customers.'
+  },
+  {
+    icon: '/assets/porsche.svg',
+    heading: 'Book a ride',
+    text: 'Want to test out driving a luxury car? Book a ride now!'
+  }
+]
+</script>
+
+<template>
+  <div class="min-h-screen flex flex-col bg-[#1f1b17]">
+    <main class="flex-1">
+    <div class="relative w-full h-[40vh] md:h-[95vh] lg:h-[95vh]">
+      <video
+    src="assets/landing_video.mp4"
+    autoplay
+    loop
+    muted
+    playsinline
+    class="w-full h-full object-cover">
+  </video>
+  <div class="absolute inset-0 flex flex-col items-center justify-center overlay">
+    <!-- Overlay content here -->
+    <p class="golden font-playfair text-2xl md:text-4xl lg:text-6xl">Experience Luxury on Wheels</p>
+    <br />
+    <p class="golden font-playfair">"Test drive premium cars with unmatched style and performance."</p>
+    <br />
+    <Link href="/book-a-ride" class="bg-[#292929] border golden-border font-playfair px-6 py-2 rounded shadow" id="bookRideButton">
+      Book a ride
+    </Link>
+    </div>
+  </div>
+  <div class="py-8 px-4">
+  <h2 class="text-3xl golden font-playfair underline mb-8">Why choose us?</h2>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-6 px-5 mx-5">
+  <WhyChooseCard
+  v-for="(card, idx) in cards"
+  :key="idx"
+  :icon="card.icon"
+  :heading="card.heading"
+  :text="card.text"
+  class="max-w-xs mx-auto md:max-w-sm lg:max-w-md"
+/>
+</div>
+</div>
+    </main>
+  </div>
+</template>
