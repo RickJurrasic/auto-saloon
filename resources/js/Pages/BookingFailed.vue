@@ -14,7 +14,7 @@ defineOptions({
             <p class="text-lg text-gray-300 mb-6">Unfortunately, your payment could not be processed.</p>
             <p class="text-gray-400">Please try again or contact our support if the problem persists.</p>
             <div class="mt-8">
-                <Link :href="route('book-a-ride.create')" class="golden font-playfair hover:underline">
+                <Link :href="route('bookings.create')" class="golden font-playfair hover:underline">
                     &larr; Back to Booking
                 </Link>
             </div>

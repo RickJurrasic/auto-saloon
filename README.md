@@ -1,105 +1,127 @@
-# Auto Saloon
+<div align="center">
 
-## Project Description
+  <h1>Auto Saloon 🏎️</h1>
 
-Auto Saloon is a modern web application for showcasing luxury cars, allowing users to browse a showroom, view car details, and potentially book test rides. The project has been recently refactored to leverage a cutting-edge technology stack, focusing on a seamless user experience and efficient development.
+  <p>
+    <a href="https://sonarcloud.io/summary/new_code?id=RickJurrasic_auto-saloon">
+      <img src="https://sonarcloud.io/api/project_badges/measure?project=RickJurrasic_auto-saloon&metric=alert_status" alt="Quality Gate Status">
+    </a>
+    <a href="https://sonarcloud.io/summary/new_code?id=RickJurrasic_auto-saloon">
+      <img src="https://sonarcloud.io/api/project_badges/measure?project=RickJurrasic_auto-saloon&metric=sqale_rating" alt="Maintainability Rating">
+    </a>
+    <a href="https://sonarcloud.io/summary/new_code?id=RickJurrasic_auto-saloon">
+      <img src="https://sonarcloud.io/api/project_badges/measure?project=RickJurrasic_auto-saloon&metric=security_rating" alt="Security Rating">
+    </a>
+  </p>
 
-## Features
+  <p>
+    <strong>A high-performance Full-stack Single Page Application (SPA) for luxury car retail.</strong><br />
+    Engineered with a focus on clean architecture, security, and optimized SEO via Server-Side Rendering.
+  </p>
 
-*   **Luxury Car Showroom:** Browse a curated collection of high-end vehicles.
-*   **Detailed Car Views:** Access comprehensive information and images for each car.
-*   **User Authentication:** Secure login functionality.
-*   **Admin Dashboard:** (Implied by `Admin/DashboardController.php`) Management interface for administrators.
-*   **Responsive Design:** (Implied by Tailwind CSS) Optimized for various screen sizes.
+  <a href="https://eriksternad.online"><strong>🌐 View Live Demo</strong></a>
+</div>
 
-## Technology Stack
+<hr />
 
-The project is built with a modern and robust set of technologies:
+<h2>🚀 Project Overview</h2>
 
-*   **Backend:**
-    *   **Laravel (v12):** A powerful PHP framework for rapid web application development.
-    *   **PHP (v8.2+):** The core scripting language.
-    *   **Inertia.js (Laravel Adapter):** Connects the Laravel backend with the Vue.js frontend, enabling a monolithic development experience for Single Page Applications (SPAs).
-*   **Frontend:**
-    *   **Vue.js (v3):** A progressive JavaScript framework for building user interfaces.
-    *   **Vite (v7):** A next-generation frontend tooling that provides an extremely fast development server and optimized build process.
-    *   **Tailwind CSS (v4):** A utility-first CSS framework for rapidly building custom designs.
-    *   **vue3-carousel:** A Vue.js component for carousels.
-*   **Database:**
-    *   **SQLite:** (Implied by `database.sqlite`) Lightweight, file-based database for development.
+<p>
+  Auto Saloon is a flagship demonstration project built on <strong>Laravel 12</strong>. It serves as a digital showroom for premium vehicles, combining the rapid interactivity of modern JavaScript frameworks with the robust security of a PHP backend.
+</p>
 
-## Key Architectural Decisions & Improvements
+<h3>Key Enhancements</h3>
+<ul>
+  <li><strong>Inertia.js & Vue 3:</strong> Fully refactored from traditional Blade templates to a modern SPA architecture.</li>
+  <li><strong>Server-Side Rendering (SSR):</strong> Enabled for lightning-fast First Contentful Paint and flawless SEO indexing.</li>
+  <li><strong>A/A/A Code Quality:</strong> Continuous analysis via SonarCloud, meeting the highest industry standards for maintainability and security.</li>
+  <li><strong>Vite 7 Tooling:</strong> Utilizing the latest frontend build tools for optimized asset delivery.</li>
+</ul>
 
-*   **Inertia.js Refactoring:** The project underwent a significant refactoring from traditional Blade views to a modern Single Page Application (SPA) architecture using Inertia.js. This provides a more dynamic and responsive user experience while retaining the benefits of server-side routing and controllers.
-*   **Server-Side Rendering (SSR):** Implemented SSR to enhance SEO, improve initial page load performance, and provide a better user experience, especially on slower networks or devices. This ensures that the initial HTML served to the client is fully rendered, even before JavaScript loads.
-*   **Vite for Frontend Tooling:** Utilizes Vite for its lightning-fast hot module replacement (HMR) and optimized production builds, significantly improving developer productivity.
-*   **Component-Based UI:** The frontend is built with reusable Vue components, promoting modularity and maintainability.
+<hr />
 
-## Installation
+<div align="center">
+  <h2>🛠️ Technology Stack</h2>
+  <table width="100%">
+    <tr>
+      <td width="50%" align="center" valign="top">
+        <h4>Backend 🧠</h4>
+        <ul style="display: inline-block; text-align: left;">
+          <li><b>Laravel 12</b> (PHP 8.2+)</li>
+          <li>Inertia.js (Server-side adapter)</li>
+          <li>SQLite (Default database)</li>
+          <li>Ziggy (Type-safe routing)</li>
+        </ul>
+      </td>
+      <td width="50%" align="center" valign="top">
+        <h4>Frontend 🎨</h4>
+        <ul style="display: inline-block; text-align: left;">
+          <li><b>Vue 3</b> (Composition API)</li>
+          <li>Tailwind CSS 4</li>
+          <li>Vite 7</li>
+          <li>Vue3-carousel</li>
+        </ul>
+      </td>
+    </tr>
+  </table>
+</div>
 
-To set up and run the project locally, follow these steps:
+<hr />
 
-1.  **Clone the repository:**
-    ```bash
-    git clone https://github.com/RickJurrasic/auto-saloon
-    cd auto-saloon
-    ```
+<h2>💻 Installation & Setup</h2>
 
-2.  **Install PHP Dependencies:**
-    ```bash
-    composer install
-    ```
+<p>Follow these steps to get the project running locally:</p>
 
-3.  **Install JavaScript Dependencies:**
-    ```bash
-    npm install
-    ```
+<ol>
+  <li>
+    <strong>Clone and Dependencies:</strong>
+    <pre><code>git clone https://github.com/RickJurrasic/auto-saloon
+cd auto-saloon
+composer install
+npm install</code></pre>
+  </li>
 
-4.  **Copy Environment File:**
-    ```bash
-    cp .env.example .env
-    ```
+  <li>
+    <strong>Environment Configuration:</strong>
+    <pre><code>cp .env.example .env
+php artisan key:generate</code></pre>
+    <p><i>Note: Update your .env file with your specific database and API credentials if necessary.</i></p>
+  </li>
 
-5.  **Generate Application Key:**
-    ```bash
-    php artisan key:generate
-    ```
+  <li>
+    <strong>Database Migration:</strong>
+    <pre><code>php artisan migrate --seed</code></pre>
+  </li>
 
-6.  **Configure Database:**
-    *   Ensure your `.env` file is configured for your database (e.g., SQLite is pre-configured with `database/database.sqlite`).
+  <li>
+  <strong>Build & Launch:</strong>
+  <p>To run the application with SSR enabled, you need to build the assets and start both servers:</p>
 
-7.  **Run Migrations and Seeders:**
-    ```bash
-    php artisan migrate --seed
-    ```
+  <pre><code># Terminal 1: Frontend Build
+npm run build
 
-8.  **Build Frontend Assets:**
-    ```bash
-    npm run build
-    ```
+# Terminal 2: PHP Development Server
+php artisan serve
 
-9.  **Start Laravel Development Server:**
-    ```bash
-    php artisan serve
-    ```
+# Terminal 3: Inertia SSR Server
+php artisan inertia:start-ssr</code></pre>
+</li>
+</ol>
 
-10. **Start Inertia SSR Server (in a separate terminal):**
-    ```bash
-    php artisan inertia:start-ssr
-    ```
+<hr />
 
-    Your application should now be accessible at `http://127.0.0.1:8000`.
+<h2>📊 Quality Metrics</h2>
+<p>The project is continuously monitored for:</p>
+<ul>
+  <li><strong>Bugs & Vulnerabilities:</strong> 0 reported</li>
+  <li><strong>Technical Debt:</strong> Minimal (Rating A)</li>
+  <li><strong>Security Hotspots:</strong> 100% Clean</li>
+</ul>
 
-## Usage
+<hr />
 
-*   Navigate to `http://127.0.0.1:8000` in your web browser.
-*   Explore the showroom, view car details, and interact with the application.
-*   To verify SSR, view the page source (Ctrl+U) or disable JavaScript in your browser.
-
-## Contributing
-
-Contributions are welcome! Please feel free to fork the repository, make your changes, and submit a pull request.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+<div align="center">
+  <p>
+    Licensed under the <a href="https://opensource.org/licenses/MIT">MIT License</a>
+  </p>
+</div>
